@@ -1,4 +1,5 @@
 " vim-plug: Vim plugin manager
+" Test3 - jinsun
 " ============================
 "
 " Download plug.vim and put it in ~/.vim/autoload
