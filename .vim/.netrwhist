@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/kimjinsun/Documents/suntube'
+let g:netrw_dirhist_2='/Users/kimjinsun/Documents/suntube/src'
+let g:netrw_dirhist_1='/Users/kimjinsun/Documents/suntube'
+let g:netrw_dirhist_0='/Users/kimjinsun/Documents/suntube/src'
+let g:netrw_dirhist_9='/Users/kimjinsun/Documents/suntube'
+let g:netrw_dirhist_8='/Users/kimjinsun/Documents/Algorithm_Study/BOJ/JS/_GM1'
+let g:netrw_dirhist_7='/Users/kimjinsun/Documents/Algorithm_Study/BOJ/JS'
+let g:netrw_dirhist_6='/Users/kimjinsun/Documents/Algorithm_Study/BOJ'
+let g:netrw_dirhist_5='/Users/kimjinsun/Documents/Algorithm_Study'
+let g:netrw_dirhist_4='/Users/kimjinsun/Documents/Algorithm_Study/BOJ/JS/_GM1'
