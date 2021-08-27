@@ -1,4 +1,7 @@
+set encoding=utf-8
+set nocompatible
 set shiftwidth=4
+set t_Co=256
 set expandtab
 set smartindent
 set number
@@ -22,6 +25,12 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=no
 set updatetime=300
 set shortmess+=c
-set colorcolumn=80
+" Set cursor shape
+set guicursor=i:ver25-iCursor
 " Ignore files
 set wildignore+=**/node_modules/*
+set cmdheight=2
+" FoldingSetup for Treesitter
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+

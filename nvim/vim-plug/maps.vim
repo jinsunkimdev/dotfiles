@@ -20,3 +20,12 @@ nnoremap <leader>nF :NvimTreeFindFile<CR>
 " BufferLine
 nnoremap <silent>b] :BufferLineCycleNext<CR>
 nnoremap <silent>b[ :BufferLineCyclePrev<CR>
+" Ranger
+nnoremap <leader>rr :RangerCurrentFile<CR>
+nnoremap <leader>rc :RangerCurrentDirectory<CR>
+nnoremap <leader>rw :RangerWorkingDirectory<CR>
+" lsp provider to find the cursor word definition and reference
+nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
+" or use command LspSagaFinder
+nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+
