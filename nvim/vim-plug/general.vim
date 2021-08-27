@@ -1,0 +1,27 @@
+set shiftwidth=4
+set expandtab
+set smartindent
+set number
+set exrc
+set guicursor=
+set nohlsearch
+set hidden
+set noerrorbells
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set scrolloff=8
+set noshowmode
+set completeopt=menuone,noinsert,noselect
+set signcolumn=no
+set updatetime=300
+set shortmess+=c
+set colorcolumn=80
+" Ignore files
+set wildignore+=**/node_modules/*
