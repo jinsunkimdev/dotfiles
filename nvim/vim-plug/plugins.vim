@@ -7,8 +7,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 	"autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-let mapleader = ","
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Here you can plug all the plugins you want
@@ -18,16 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope.nvim'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'akinsho/bufferline.nvim'
+    Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 	
 call plug#end()
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set termguicolors
-colorscheme "catppuccino"
-lua << EOF
-require('catppuccino').setup {
-  options = {
-    theme = "neon_latte"
-        -- ... the rest of your lualine config
-  }
-}
-EOF
