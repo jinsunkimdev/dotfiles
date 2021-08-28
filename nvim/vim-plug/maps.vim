@@ -28,4 +28,5 @@ nnoremap <leader>rw :RangerWorkingDirectory<CR>
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 " or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+inoremap <expr> <Tab> search('\%#[]>)}]', 'n') ? '<Right>' : '<Tab>' 
 

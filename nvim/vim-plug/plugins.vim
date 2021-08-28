@@ -29,8 +29,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Coding Guide
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'lukas-reineke/indent-blankline.nvim'
-    Plug 'luochen1990/rainbow'
     Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
+    Plug 'itchyny/vim-cursorword'
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+    Plug 'tpope/vim-surround'
+    Plug 'mattn/emmet-vim'
+    Plug 'scrooloose/nerdcommenter'
+    Plug 'othree/html5.vim'
+    Plug 'hail2u/vim-css3-syntax'
+    Plug 'kien/rainbow_parentheses.vim'
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'
