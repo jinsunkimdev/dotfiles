@@ -5,11 +5,11 @@ let g:mapleader = ","
 nnoremap <silent> <leader> :<c-u>WhichKey  ','<CR>
 set timeoutlen=300
 " Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fj <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
+nnoremap <leader>tf <cmd>Telescope find_files<cr>
+nnoremap <leader>tg <cmd>Telescope live_grep<cr>
+nnoremap <leader>tb <cmd>Telescope buffers<cr>
+nnoremap <leader>th <cmd>Telescope help_tags<cr>
+nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
 " NvimTree
 nnoremap <leader>nt :NvimTreeToggle<CR>
 nnoremap <leader>no :NvimTreeOpen<CR>
@@ -29,4 +29,16 @@ nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 " or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 inoremap <expr> <Tab> search('\%#[]>)}]', 'n') ? '<Right>' : '<Tab>' 
+" FloatermKeymaps
+tnoremap <ESC> <C-\><C-n>
+nnoremap <silent> <leader>/t :FloatermToggle<CR>
+tnoremap <silent> <F1> <C-\><C-n>:FloatermToggle<CR>
+nnoremap <silent> <leader>fp :FloatermPrev<CR>
+tnoremap <silent> <F2> <C-\><C-n>:FloatermPrev<CR>
+nnoremap <silent> <leader>fx :FloatermNext<CR>
+tnoremap <silent> <F3> <C-\><C-n>:FloatermNext<CR>
+nnoremap <silent> <leader>fn :FloatermNew<CR> 
+tnoremap <silent> <F4> <C-\><C-n>:FloatermNew<CR>
+nnoremap <silent> <leader>/n :FloatermNew node<CR>
+nnoremap <silent> <leader>/f :FloatermNew fzf<CR>
 

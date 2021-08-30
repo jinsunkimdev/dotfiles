@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    "Plug 'jiangmiao/auto-pairs'
     " Which Key
     Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
     " Ranger
@@ -26,9 +26,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kyazdani42/nvim-tree.lua'
     Plug 'akinsho/bufferline.nvim'
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    " Terminal
+    Plug 'voldikss/vim-floaterm'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     " Coding Guide
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-    Plug 'lukas-reineke/indent-blankline.nvim'
+    "Plug 'lukas-reineke/indent-blankline.nvim'
     Plug 'pangloss/vim-javascript'
     Plug 'mxw/vim-jsx'
     Plug 'itchyny/vim-cursorword'
