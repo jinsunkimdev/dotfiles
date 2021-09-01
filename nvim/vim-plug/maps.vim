@@ -41,4 +41,5 @@ nnoremap <silent> <leader>fn :FloatermNew<CR>
 tnoremap <silent> <F4> <C-\><C-n>:FloatermNew<CR>
 nnoremap <silent> <leader>/n :FloatermNew node<CR>
 nnoremap <silent> <leader>/f :FloatermNew fzf<CR>
+nnoremap <silent> <leader>/r :FloatermNew ranger<CR>
 

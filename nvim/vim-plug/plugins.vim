@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     " Auto pairs for '(' '[' '{'
-    "Plug 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'
     " Which Key
     Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
     " Ranger
@@ -42,9 +42,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/nerdcommenter'
     Plug 'othree/html5.vim'
     Plug 'hail2u/vim-css3-syntax'
-    Plug 'kien/rainbow_parentheses.vim'
+    Plug 'kien/rainbow_parentheses.vim' 
+    Plug 'andrewradev/tagalong.vim'
     " COC
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+   Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'
 	
 call plug#end()
