@@ -24,6 +24,8 @@ nnoremap <silent>b[ :BufferLineCyclePrev<CR>
 nnoremap <leader>rr :RangerCurrentFile<CR>
 nnoremap <leader>rc :RangerCurrentDirectory<CR>
 nnoremap <leader>rw :RangerWorkingDirectory<CR>
+map <leader>/r :RangerCurrentDirectory<CR>
+
 " lsp provider to find the cursor word definition and reference
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 " or use command LspSagaFinder
@@ -41,5 +43,5 @@ nnoremap <silent> <leader>fn :FloatermNew<CR>
 tnoremap <silent> <F4> <C-\><C-n>:FloatermNew<CR>
 nnoremap <silent> <leader>/n :FloatermNew node<CR>
 nnoremap <silent> <leader>/f :FloatermNew fzf<CR>
-nnoremap <silent> <leader>/r :FloatermNew ranger<CR>
+"nnoremap <silent> <leader>/r :FloatermNew ranger<CR>
 

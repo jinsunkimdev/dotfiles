@@ -29,4 +29,8 @@ set guicursor=i:ver25-iCursor
 " Ignore files
 set wildignore+=**/node_modules/*
 set cmdheight=2
+" Do not create ~/.viminfo file
+set viminfo=
+" CtrlP wildignore
+set wildignore+=*/node_modules/*,_site,*/__pycache__/,*/venv/*,*/target/*,*/.vim$,\~$,*/.log,*/.aux,*/.cls,*/.aux,*/.bbl,*/.blg,*/.fls,*/.fdb*/,*/.toc,*/.out,*/.glo,*/.log,*/.ist,*/.fdb_latexmk
 

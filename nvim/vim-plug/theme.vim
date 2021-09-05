@@ -4,7 +4,7 @@ local catppuccino = require("catppuccino")
 -- configure it
 catppuccino.setup(
     {
-            colorscheme = "dark_catppuccino",
+            colorscheme = "soft_manilo",
                 transparency = true,
     },
      {
