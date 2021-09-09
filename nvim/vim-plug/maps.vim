@@ -28,6 +28,8 @@ map <leader>/r :RangerCurrentDirectory<CR>
 
 " lsp provider to find the cursor word definition and reference
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
+" refresh coc lsp
+inoremap <silent><expr> <M-space> coc#refresh()
 " or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 inoremap <expr> <Tab> search('\%#[]>)}]', 'n') ? '<Right>' : '<Tab>' 
