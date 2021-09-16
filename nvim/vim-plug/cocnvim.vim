@@ -1,0 +1,1 @@
+let g:coc_global_extensions = [ 'coc-json', 'coc-tsserver','coc-emmet','coc-eslint','coc-tslint', 'coc-prettier','coc-css','coc-html','coc-highlight','coc-htmlhint','coc-html-css-support','coc-xml','coc-snippets', 'coc-markdownlint','coc-markdown-preview-enhanced']

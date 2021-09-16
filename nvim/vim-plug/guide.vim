@@ -4,7 +4,6 @@
 "}
 " Emmet Trigger
 imap ,, <C-y>,
-let g:coc_global_extensions = [ 'coc-json', 'coc-tsserver','coc-emmet','coc-eslint','coc-tslint', 'coc-prettier','coc-css','coc-html','coc-highlight','coc-htmlhint','coc-html-css-support','coc-xml','coc-snippets']
 let g:rainbow_active = 1
 lua <<EOF
     require("indent_blankline").setup {
