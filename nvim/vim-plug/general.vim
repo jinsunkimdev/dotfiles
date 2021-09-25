@@ -22,7 +22,6 @@ set noshowmode
 set completeopt=menuone,noinsert,noselect
 set signcolumn=no
 set updatetime=300
-set nofoldenable
 set shortmess+=c
 " Set cursor shape
 set guicursor=i:ver25-iCursor

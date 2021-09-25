@@ -28,10 +28,10 @@ set updatetime=50
 "Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 set colorcolumn=80
+set viminfo=
 call plug#begin('~/.vim/plugged')
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
 colorscheme gruvbox
