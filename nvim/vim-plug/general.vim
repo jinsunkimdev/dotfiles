@@ -32,4 +32,5 @@ set cmdheight=2
 set viminfo=
 " CtrlP wildignore
 set wildignore+=*/node_modules/*,_site,*/__pycache__/,*/venv/*,*/target/*,*/.vim$,\~$,*/.log,*/.aux,*/.cls,*/.aux,*/.bbl,*/.blg,*/.fls,*/.fdb*/,*/.toc,*/.out,*/.glo,*/.log,*/.ist,*/.fdb_latexmk
-
+" Nvim Treee
+let g:nvim_tree_width = 25 "30 by default, can be width_in_columns or 'width_in_percent%'

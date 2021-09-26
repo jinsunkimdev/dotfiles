@@ -5,19 +5,18 @@
       relink: true
 
 - create:
-    - ~/.vim
-    - ~/.config/nvim
-    - ~/.config/fish
-    - ~/.config/nvim/autoload
-- clean: ['~', '~/.vim']
+    - ~/.config/
+- clean: ['~']
 
 - link:
-  ##---terminal---##
+  ###---Terminal---###
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
+    ~/.config/fish: fish
+  ###----TMUX----###
     ~/.tmux.conf: .tmux.conf
-  ##-----VIM-----###
+    ~/.config/tmuxinator: tmuxinator
+  ###----VIM----###
     ~/.vimrc: vimrc
     ~/.vim: .vim
     ~/.config/nvim: nvim
-    ~/.config/fish: fish
