@@ -9,4 +9,3 @@ source $HOME/.config/nvim/vim-plug/treesitter.vim
 source $HOME/.config/nvim/vim-plug/guide.vim
 source $HOME/.config/nvim/vim-plug/cocnvim.vim
 source $HOME/.config/nvim/vim-plug/floaterm.vim
-

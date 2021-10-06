@@ -11,7 +11,7 @@ nnoremap <leader>tb <cmd>Telescope buffers<cr>
 nnoremap <leader>th <cmd>Telescope help_tags<cr>
 nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
 " NvimTree
-nnoremap <leader>nt :NvimTreeToggle<cr>
+nnoremap <leader>nt :NvimTreeToggle<CR>
 nnoremap <leader>no :NvimTreeOpen<CR>
 nnoremap <leader>nc :NvimTreeClose<CR>
 nnoremap <leader>nf :NvimTreeFocus<CR>

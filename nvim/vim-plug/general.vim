@@ -1,4 +1,4 @@
-set encoding=utf-8
+set encoding=UTF-8
 set nocompatible
 set shiftwidth=4
 set t_Co=256
@@ -34,3 +34,8 @@ set viminfo=
 set wildignore+=*/node_modules/*,_site,*/__pycache__/,*/venv/*,*/target/*,*/.vim$,\~$,*/.log,*/.aux,*/.cls,*/.aux,*/.bbl,*/.blg,*/.fls,*/.fdb*/,*/.toc,*/.out,*/.glo,*/.log,*/.ist,*/.fdb_latexmk
 " Nvim Treee
 let g:nvim_tree_width = 25 "30 by default, can be width_in_columns or 'width_in_percent%'
+" loading the plugin
+let g:webdevicons_enable = 1
+" adding the flags to NERDTree
+let g:webdevicons_enable_nerdtree = 1
+

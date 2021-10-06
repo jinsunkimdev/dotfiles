@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christoomey/vim-tmux-navigator'
     " Coding Guide
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-    Plug 'lukas-reineke/indent-blankline.nvim'
+    Plug 'yggdroot/indentline'
     Plug 'pangloss/vim-javascript'
     Plug 'mxw/vim-jsx'
     Plug 'itchyny/vim-cursorword'
