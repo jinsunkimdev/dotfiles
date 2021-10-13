@@ -35,6 +35,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'yggdroot/indentline'
     Plug 'pangloss/vim-javascript'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'maxmellon/vim-jsx-pretty'
+    Plug 'jparise/vim-graphql'
     Plug 'mxw/vim-jsx'
     Plug 'itchyny/vim-cursorword'
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
