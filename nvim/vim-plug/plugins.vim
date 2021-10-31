@@ -43,12 +43,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'tpope/vim-surround'
     Plug 'mattn/emmet-vim'
-    Plug 'scrooloose/nerdcommenter'
+    Plug 'preservim/nerdcommenter'
     Plug 'othree/html5.vim'
     Plug 'hail2u/vim-css3-syntax'
     Plug 'frazrepo/vim-rainbow'
     Plug 'andrewradev/tagalong.vim'
     Plug 'kien/ctrlp.vim'
+    Plug 'folke/trouble.nvim'
+    Plug 'folke/lsp-colors.nvim'
+    Plug 'digitaltoad/vim-pug'
+    Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'

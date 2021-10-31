@@ -68,10 +68,25 @@ require'nvim-web-devicons'.setup {
          color = "#F53751",
          name = "Html",
         };
+    ["pug"] = {
+        icon = "",
+        color = "ivory",
+        name = "Pug",
+        };
     ["gulpfile"] = {
          icon = "",
          color = "#cc3e44",
          name = "Gulpfile",
+        };
+    ["gulpfile.js"] = {
+         icon = "",
+         color = "#cc3e44",
+         name = "GulpfileJS",
+        };
+    ["gulpfile.babel.js"] = {
+         icon = "",
+         color = "#cc3e44",
+         name = "GulpfileBabelJS",
         };
     [".babelrc"] = {
          icon = "",
