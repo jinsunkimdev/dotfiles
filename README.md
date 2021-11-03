@@ -1,4 +1,4 @@
 # dotfiles
 My dotfiles :)
 
-##Using Neovim with Tmux. And I use fish shell.
+## Using Neovim with Tmux. And I use fish shell.
