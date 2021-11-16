@@ -9,7 +9,7 @@ nnoremap <leader>tf <cmd>Telescope find_files<cr>
 nnoremap <leader>tg <cmd>Telescope live_grep<cr>
 nnoremap <leader>tb <cmd>Telescope buffers<cr>
 nnoremap <leader>th <cmd>Telescope help_tags<cr>
-nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
+"nnoremap <leader>ts :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
 " NvimTree
 nnoremap <leader>nt :NvimTreeToggle<CR>
 nnoremap <leader>no :NvimTreeOpen<CR>
@@ -44,8 +44,7 @@ tnoremap <silent> <F3> <C-\><C-n>:FloatermNext<CR>
 nnoremap <silent> <leader>fn :FloatermNew<CR> 
 tnoremap <silent> <F4> <C-\><C-n>:FloatermNew<CR>
 nnoremap <silent> <leader>/n :FloatermNew node<CR>
-nnoremap <silent> <leader>/f :FloatermNew fzf<CR>
-"nnoremap <silent> <leader>/r :FloatermNew ranger<CR>
+nnoremap <silent> <leader>/r :FloatermNew ranger<CR>
 " Auto Pair key bindings
 let g:AutoPairsShortcutFastWrap = '<M-e>'
 " Split window

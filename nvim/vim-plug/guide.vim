@@ -13,4 +13,23 @@ lua << EOF
   Information = "#0db9d7",
   Hint = "#10B981"
 })
+require('telescope').load_extension('media_files')
+require('telescope').setup{ 
+ defaults = {
+        scroll_strategy = 'cycle',
+        winblend = 0,
+        layout_defaults = {
+        layout_strategy = 'flex',
+    },
+ extensions = {
+        media_files = {
+        -- filetypes whitelist
+        -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+        filetypes = {"pdf", "png", "webp", "jpg", "jpeg"},
+        find_cmd = "rg" -- find command (defaults to `fd`)
+      }
+    },
+ file_ignore_patterns = {"node_modules"},
+    },
+}
 EOF

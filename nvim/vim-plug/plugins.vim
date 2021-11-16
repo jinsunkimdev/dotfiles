@@ -10,10 +10,13 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Theme
-    Plug 'Pocco81/Catppuccino.nvim'
+    Plug 'cocopon/iceberg.vim'
+    Plug 'wadackel/vim-dogrun'
     " Telescope
+    Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-media-files.nvim'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Which Key
@@ -28,35 +31,22 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
     " Terminal
     Plug 'voldikss/vim-floaterm'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'christoomey/vim-tmux-navigator'
     " Coding Guide
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'yggdroot/indentline'
-    Plug 'pangloss/vim-javascript'
-    Plug 'leafgarland/typescript-vim'
-    Plug 'maxmellon/vim-jsx-pretty'
-    Plug 'jparise/vim-graphql'
-    Plug 'mxw/vim-jsx'
     Plug 'itchyny/vim-cursorword'
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'tpope/vim-surround'
-    Plug 'mattn/emmet-vim'
     Plug 'preservim/nerdcommenter'
-    Plug 'othree/html5.vim'
-    Plug 'hail2u/vim-css3-syntax'
     Plug 'frazrepo/vim-rainbow'
     Plug 'andrewradev/tagalong.vim'
-    Plug 'kien/ctrlp.vim'
     Plug 'folke/trouble.nvim'
     Plug 'folke/lsp-colors.nvim'
     Plug 'digitaltoad/vim-pug'
-    Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
+    Plug 'alvan/vim-closetag'
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'
     " File change
     Plug 'tpope/vim-eunuch'
-	
 call plug#end()
