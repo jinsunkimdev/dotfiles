@@ -9,9 +9,9 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Theme
+    " For vim colorscheme
     Plug 'cocopon/iceberg.vim'
-    Plug 'wadackel/vim-dogrun'
+    Plug 'Mofiqul/dracula.nvim'
     " Telescope
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
@@ -44,6 +44,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'folke/lsp-colors.nvim'
     Plug 'digitaltoad/vim-pug'
     Plug 'alvan/vim-closetag'
+    Plug 'christoomey/vim-tmux-navigator'
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'

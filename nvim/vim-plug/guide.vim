@@ -2,7 +2,7 @@
 imap ,, <C-y>,
 let g:indentLine_char_list = ['┊']
 lua << EOF
-  require("trouble").setup {
+require("trouble").setup {
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below

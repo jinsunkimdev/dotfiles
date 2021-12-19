@@ -5,6 +5,7 @@ set t_Co=256
 set expandtab
 set smartindent
 set number
+set numberwidth=3
 set nohlsearch
 set hidden
 set noerrorbells
@@ -25,13 +26,13 @@ set updatetime=300
 set shortmess+=c
 " Set cursor shape
 set guicursor=i:ver25-iCursor
-" Ignore files
-set wildignore+=**/node_modules/*
-set cmdheight=2
+set cmdheight=1
 " Do not create ~/.viminfo file
 set viminfo=
 " CtrlP wildignore
 set wildignore+=*/node_modules/*,_site,*/__pycache__/,*/venv/*,*/target/*,*/.vim$,\~$,*/.log,*/.aux,*/.cls,*/.aux,*/.bbl,*/.blg,*/.fls,*/.fdb*/,*/.toc,*/.out,*/.glo,*/.log,*/.ist,*/.fdb_latexmk
+" Cursor blinking(all)
+set guicursor+=a:blinkon1
 " Nvim Treee
 let g:nvim_tree_width = 25 "30 by default, can be width_in_columns or 'width_in_percent%'
 " loading the plugin
@@ -69,3 +70,7 @@ let g:closetag_regions = {
             \ }
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
+" show the '~' characters after the end of buffers
+let g:dracula_show_end_of_buffer = 1
+" use transparent background
+let g:dracula_transparent_bg = 1

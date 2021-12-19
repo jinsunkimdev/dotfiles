@@ -20,6 +20,11 @@ nnoremap <leader>nF :NvimTreeFindFile<CR>
 " BufferLine
 nnoremap <silent>b] :BufferLineCycleNext<CR>
 nnoremap <silent>b[ :BufferLineCyclePrev<CR>
+nnoremap <silent>bo :BufferLineMoveNext<CR>
+nnoremap <silent>bi :BufferLineMovePrev<CR>
+nnoremap <silent>be :BufferLineSortByExtension<CR>
+nnoremap <silent>bd :BufferLineSortByDirectory<CR>
+"nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 " Ranger
 nnoremap <leader>rr :RangerCurrentFile<CR>
 nnoremap <leader>rc :RangerCurrentDirectory<CR>

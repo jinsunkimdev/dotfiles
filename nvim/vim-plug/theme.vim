@@ -1,9 +1,59 @@
 " Vim Script
-colorscheme iceberg
+colorscheme dracula
 hi Normal guibg=NONE ctermbg=NONE
 lua << EOF
-require("bufferline").setup{}
--- require'nvim-web-devicons'.setup {}
+require("bufferline").setup{
+options = {
+    numbers =  "buffer_id",
+    close_command = "bdelete! %d",       -- can be a string | function, see "Mouse actions"
+    right_mouse_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
+    left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
+    middle_mouse_command = nil,          -- can be a string | function, see "Mouse actions"
+    indicator_icon = '▎',
+    buffer_close_icon = '',
+    modified_icon = '●',
+    close_icon = '',
+    left_trunc_marker = '',
+    right_trunc_marker = '',
+    offsets = {
+        {
+    filetype = "NvimTree",
+    text = function()
+      return vim.fn.getcwd()
+    end,
+    highlight = "Directory",
+    text_align = "center"
+        }
+    },
+    name_formatter = function(buf)  -- buf contains a "name", "path" and "bufnr"
+      -- remove extension from markdown files for example
+      if buf.name:match('%.md') then
+        return vim.fn.fnamemodify(buf.name, ':t:r')
+      end
+    end,
+    max_name_length = 18,
+    max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
+    tab_size = 18,
+    diagnostics = "coc",
+    diagnostics_update_in_insert = true,
+    diagnostics_indicator = function(count, level, diagnostics_dict, context)
+     local s = " "
+  for e, n in pairs(diagnostics_dict) do
+    local sym = e == "error" and " "
+      or (e == "warning" and " " or "" )
+    s = s .. n .. sym
+  end
+  return s
+    end,
+    show_buffer_icons = true, -- disable filetype icons for buffers
+    show_buffer_close_icons = false,
+    show_close_icon = true,
+    show_tab_indicators = true,
+    persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
+    -- can also be a table containing 2 custom separators
+    -- [focused and unfocused]. eg: { '|', '|' }
+    },
+}
 require'nvim-web-devicons'.setup {
  -- your personnal icons can go here (to override)
  -- DevIcon will be appended to `name`
@@ -444,7 +494,7 @@ require'nvim-web-devicons'.setup {
     enable      = false,
     -- update the root directory of the tree to the one of the folder containing the file if the file is not under the current root directory
     -- only relevant when `update_focused_file.enable` is true
-    update_cwd  = false,
+    update_cwd  = true,
     -- list of buffer names / filetypes that will not update the cwd if the file isn't found under the current root directory
     -- only relevant when `update_focused_file.update_cwd` is true and `update_focused_file.enable` is true
     ignore_list = {}
@@ -458,7 +508,7 @@ require'nvim-web-devicons'.setup {
   },
     view = {
     -- width of the window, can be either a number (columns) or a string in `%`
-    width = 25,
+    width = 22,
   },
 }
 EOF
