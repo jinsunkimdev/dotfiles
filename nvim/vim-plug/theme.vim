@@ -333,11 +333,6 @@ require'nvim-web-devicons'.setup {
         color = "#6d8086",
         name = "Makefile",
       };
-    ["node_modules"] = {
-        icon = "",
-        color = "#E8274B",
-        name = "NodeModules",
-      };
     ["package.json"] = {
       icon = "",
       color = "#68a063",
@@ -491,7 +486,7 @@ require'nvim-web-devicons'.setup {
   -- update the focused file on `BufEnter`, un-collapses the folders recursively until it finds the file
   update_focused_file = {
     -- enables the feature
-    enable      = false,
+    enable      = true,
     -- update the root directory of the tree to the one of the folder containing the file if the file is not under the current root directory
     -- only relevant when `update_focused_file.enable` is true
     update_cwd  = true,
@@ -506,7 +501,12 @@ require'nvim-web-devicons'.setup {
     -- the command arguments as a list
     args = {}
   },
-    view = {
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 300,
+  },
+  view = {
     -- width of the window, can be either a number (columns) or a string in `%`
     width = 22,
   },

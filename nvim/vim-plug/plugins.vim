@@ -10,13 +10,11 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " For vim colorscheme
-    Plug 'cocopon/iceberg.vim'
     Plug 'Mofiqul/dracula.nvim'
     " Telescope
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
-    Plug 'nvim-telescope/telescope-media-files.nvim'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Which Key
