@@ -30,7 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Coding Guide
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
     Plug 'yggdroot/indentline'
     Plug 'itchyny/vim-cursorword'
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
