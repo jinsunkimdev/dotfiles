@@ -40,9 +40,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'andrewradev/tagalong.vim'
     Plug 'folke/trouble.nvim'
     Plug 'folke/lsp-colors.nvim'
-    Plug 'digitaltoad/vim-pug'
     Plug 'alvan/vim-closetag'
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'mattn/emmet-vim'
+    Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
+    Plug 'jparise/vim-graphql'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'

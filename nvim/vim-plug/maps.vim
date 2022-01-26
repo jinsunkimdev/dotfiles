@@ -35,6 +35,7 @@ map <leader>/r :RangerCurrentDirectory<CR>
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 " refresh coc lsp
 inoremap <silent><expr> <M-space> coc#refresh()
+nnoremap <silent> K :call CocAction('doHover')<CR>
 " or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 inoremap <expr> <Tab> search('\%#[]>)}]', 'n') ? '<Right>' : '<Tab>' 

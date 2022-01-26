@@ -1,1 +1,17 @@
-let g:coc_global_extensions = [ 'coc-tsserver','coc-json','coc-emmet','coc-eslint', 'coc-prettier','coc-css','coc-html','coc-highlight','coc-htmlhint','coc-html-css-support','coc-xml','coc-snippets', 'coc-markdownlint','coc-markdown-preview-enhanced','coc-deno']
+let g:coc_global_extensions = [
+\ "coc-css",
+\ "coc-html",
+\ "coc-json",
+\ "coc-eslint",
+\ "coc-prettier",
+\ "coc-ultisnips",
+\ "coc-tailwindcss",
+\ "coc-rls",
+\ "coc-tsserver",
+\ "coc-ultisnips",
+\ "coc-neosnippet",
+\ "coc-pyls",
+\ "coc-vetur",
+\ "coc-yank",
+\ "coc-emmet"]
+

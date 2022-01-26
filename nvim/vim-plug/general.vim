@@ -28,6 +28,12 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=no
 set updatetime=200
 set shortmess+=c
+" set Neovim folding
+set foldnestmax=10
+set foldlevel=2
+set foldlevel=20
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 " Set cursor shape
 set guicursor=i:ver25-iCursor
 set cmdheight=1
@@ -78,3 +84,10 @@ let g:closetag_close_shortcut = '<leader>>'
 let g:dracula_show_end_of_buffer = 1
 " use transparent background
 let g:dracula_transparent_bg = 1
+" emmet setting
+let g:user_emmet_settings = {
+\  'javascript' : {
+\    'extends' : 'jsx',
+\    'quote_char': "'",
+\  },
+\}
