@@ -27,8 +27,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kyazdani42/nvim-tree.lua'
     Plug 'akinsho/bufferline.nvim'
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-    " Terminal
-    Plug 'voldikss/vim-floaterm'
     " Coding Guide
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
     Plug 'yggdroot/indentline'
@@ -48,7 +46,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jparise/vim-graphql'
     Plug 'leafgarland/typescript-vim'
     Plug 'peitalin/vim-jsx-typescript'
-    
     " COC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'onsails/lspkind-nvim'
