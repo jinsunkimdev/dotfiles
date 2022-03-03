@@ -73,11 +73,6 @@ require'nvim-web-devicons'.setup {
          color = "#F53751",
          name = "Html",
         };
-    ["pug"] = {
-        icon = "",
-        color = "ivory",
-        name = "Pug",
-        };
     ["gulpfile"] = {
          icon = "",
          color = "#cc3e44",
@@ -94,12 +89,12 @@ require'nvim-web-devicons'.setup {
          name = "GulpfileBabelJS",
         };
     [".babelrc"] = {
-         icon = "",
+         icon = "",
          color = "#f9dc3e",
          name = "Babelrc"
         };
     ["babel.config.json"] = {
-        icon = "",
+        icon = "",
         color = "#f9dc3e",
         name = "BabelConfig"
         };
@@ -463,6 +458,16 @@ require'nvim-web-devicons'.setup {
         color = "#ff3e00",
         name = "Svelte"
       };
+     ["prisma"] = {
+      icon = "",
+      color = "#F3F5ED",
+      name = "Prisma"
+      };
+    [".env"] = {
+      icon = "",
+      color = "#FFBE00",
+      name = "Env"
+      }
     }
  }
  -- following options are the default(NvimTree)

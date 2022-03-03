@@ -29,11 +29,21 @@ set signcolumn=no
 set updatetime=200
 set shortmess+=c
 " set Neovim folding
+set foldmethod=syntax
+set foldcolumn=1 "defines 1 col at window left, to indicate folding  
+let javaScript_fold=1 "activate folding by JS syntax  
+set foldlevelstart=99 "start file with all folds opened
 set foldnestmax=10
-set foldlevel=2
 set foldlevel=20
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+" POSTCSS support
+autocmd FileType scss setl iskeyword+=@-@
 " Set cursor shape
 set guicursor=i:ver25-iCursor
 set cmdheight=1

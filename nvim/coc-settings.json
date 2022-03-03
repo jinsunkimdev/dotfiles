@@ -1,4 +1,5 @@
 {
+  "css.lint.unknownAtRules": "ignore",
   "suggest.noselect": false,
   "suggest.completionItemKindLabels": {
     "method": "  ",
