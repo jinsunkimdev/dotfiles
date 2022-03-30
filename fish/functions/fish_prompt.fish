@@ -1,1 +1,1 @@
-/Users/kimjinsun/.local/share/omf/themes/slavic-cat/fish_prompt.fish
+/Users/kimjinsun/.local/share/omf/themes/dracula-theme-omf/fish_prompt.fish

@@ -1,3 +1,9 @@
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init zsh pre)"
+
+
+
 # My zshrc file
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -127,3 +133,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+
+
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init zsh post)"
