@@ -4,8 +4,6 @@ let g:coc_global_extensions = [
 \ "coc-json",
 \ "coc-eslint",
 \ "coc-prettier",
-\ "coc-ultisnips",
-\ "coc-tailwindcss",
 \ "coc-rls",
 \ "coc-tsserver",
 \ "coc-ultisnips",
