@@ -40,8 +40,6 @@ augroup vimrc
   au BufReadPre * setlocal foldmethod=indent
   au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 augroup END
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
 " POSTCSS support
 autocmd FileType scss setl iskeyword+=@-@
 " Set cursor shape

@@ -77,17 +77,19 @@ ZSH_THEME="jovial"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
-  git
-  autojump
-  urltools
-  bgnotify
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  zsh-history-enquirer
-  jovial
-  osx
+    git
+    autojump
+    urltools
+    bgnotify
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-history-enquirer
+    jovial
+    osx
 )
+#
 
 source $ZSH/oh-my-zsh.sh
 
